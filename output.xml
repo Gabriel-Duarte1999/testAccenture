@@ -1,334 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T14:21:24.190221" rpa="false" schemaversion="5">
-<suite id="s1" name="Web Tables Structure" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/web_tables_structure.robot">
-<test id="s1-t1" name="Acesssando a tela criando, editando e excluindo o registro" line="9">
+<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T15:23:19.003924" rpa="false" schemaversion="5">
+<suite id="s1" name="Widgets Progress Bar" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/widgets_progress_bar.robot">
+<test id="s1-t1" name="Acessando a tela de Widgets e Parando a barra de progresso antes dos 25%" line="8">
 <kw name="Abrir o site demoqa" owner="setup_teardown" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:24.476552" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-01-31T15:23:19.293701" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>url=${site}</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-31T14:21:24.476179" elapsed="9.896391"/>
+<status status="PASS" start="2025-01-31T15:23:19.293358" elapsed="8.715683"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-31T14:21:34.372930" elapsed="0.013218"/>
+<status status="PASS" start="2025-01-31T15:23:28.009576" elapsed="0.012945"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:37.388026" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-31T15:23:31.023382" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:34.386674" elapsed="3.001634"/>
+<status status="PASS" start="2025-01-31T15:23:28.022882" elapsed="3.000864"/>
 </kw>
-<status status="PASS" start="2025-01-31T14:21:24.475187" elapsed="12.913292"/>
+<status status="PASS" start="2025-01-31T15:23:19.292151" elapsed="11.731753"/>
 </kw>
-<kw name="Acessar a tela de Elements" owner="web_tables_structure">
+<kw name="Acessa a tela de Widgets" owner="widgets_progress_bar_structure">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:37.389930" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[1]/div/div[3]'.</msg>
-<arg>//*[@id="app"]/div/div/div[2]/div/div[1]/div/div[3]</arg>
+<msg time="2025-01-31T15:23:31.025062" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[4]/div/div[3]'.</msg>
+<arg>//*[@id="app"]/div/div/div[2]/div/div[4]/div/div[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:37.389260" elapsed="0.108816"/>
+<status status="PASS" start="2025-01-31T15:23:31.024722" elapsed="0.084329"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:39.499253" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T15:23:33.109837" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:37.498572" elapsed="2.001559"/>
+<status status="PASS" start="2025-01-31T15:23:31.109409" elapsed="2.000785"/>
 </kw>
-<status status="PASS" start="2025-01-31T14:21:37.388896" elapsed="2.111855"/>
+<status status="PASS" start="2025-01-31T15:23:31.024328" elapsed="2.086043"/>
 </kw>
-<kw name="Clica em Web Tables" owner="web_tables_structure">
+<kw name="Acessa o menu de Barra de progresso" owner="widgets_progress_bar_structure">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:39.502973" level="INFO">Clicking element '//*[@id="item-3"]'.</msg>
-<arg>//*[@id="item-3"]</arg>
+<msg time="2025-01-31T15:23:33.111875" level="INFO">Clicking element '//ul[@class='menu-list']/li//span[text()='Progress Bar']/ancestor::li'.</msg>
+<arg>//ul[@class='menu-list']/li//span[text()='Progress Bar']/ancestor::li</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:39.502415" elapsed="0.072644"/>
+<status status="PASS" start="2025-01-31T15:23:33.111573" elapsed="0.062342"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:42.575888" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:39.575507" elapsed="3.000668"/>
-</kw>
-<status status="PASS" start="2025-01-31T14:21:39.501694" elapsed="3.074639"/>
-</kw>
-<kw name="Cria um novo Registro" owner="web_tables_structure">
-<kw name="First Name" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:42.577564" level="INFO">${firstName} = Yan</msg>
-<var>${firstName}</var>
-<status status="PASS" start="2025-01-31T14:21:42.577334" elapsed="0.000340"/>
-</kw>
-<kw name="Last Name" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:42.577974" level="INFO">${lastName} = da Mota</msg>
-<var>${lastName}</var>
-<status status="PASS" start="2025-01-31T14:21:42.577805" elapsed="0.000260"/>
-</kw>
-<kw name="Email" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:42.578422" level="INFO">${email} = gsiqueira@example.org</msg>
-<var>${email}</var>
-<status status="PASS" start="2025-01-31T14:21:42.578195" elapsed="0.000308"/>
-</kw>
-<kw name="Random Digit Not Null" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:42.578788" level="INFO">${idade1} = 5</msg>
-<var>${idade1}</var>
-<doc>Generate a random non-zero digit (1 to 9).</doc>
-<status status="PASS" start="2025-01-31T14:21:42.578626" elapsed="0.000238"/>
-</kw>
-<kw name="Random Digit Not Null" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:42.579134" level="INFO">${idade2} = 5</msg>
-<var>${idade2}</var>
-<doc>Generate a random non-zero digit (1 to 9).</doc>
-<status status="PASS" start="2025-01-31T14:21:42.578984" elapsed="0.000220"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:42.579650" level="INFO">Clicking button '//*[@id="addNewRecordButton"]'.</msg>
-<arg>//*[@id="addNewRecordButton"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:42.579348" elapsed="0.066729"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:44.647487" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T15:23:35.174812" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:42.646822" elapsed="2.001078"/>
+<status status="PASS" start="2025-01-31T15:23:33.174357" elapsed="2.000776"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:44.648688" level="INFO">Typing text 'Yan' into text field '//*[@id="firstName"]'.</msg>
-<arg>//*[@id="firstName"]</arg>
-<arg>${firstName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:44.648187" elapsed="0.062837"/>
+<status status="PASS" start="2025-01-31T15:23:33.110753" elapsed="2.064782"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:44.711777" level="INFO">Typing text 'da Mota' into text field '//*[@id="lastName"]'.</msg>
-<arg>//*[@id="lastName"]</arg>
-<arg>${lastName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:44.711399" elapsed="0.052155"/>
+<kw name="Clica na barra de progresso e para antes dos 25% e checa se parou abaixo" owner="widgets_progress_bar_structure">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:23:35.177224" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
+<arg>//*[@id="startStopButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:23:35.176801" elapsed="0.046679"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:46.764273" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T15:23:37.224766" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:44.763873" elapsed="2.000815"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:46.765384" level="INFO">Typing text 'gsiqueira@example.org' into text field '//*[@id="userEmail"]'.</msg>
-<arg>//*[@id="userEmail"]</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:46.765024" elapsed="0.060346"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:48.826344" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:46.825895" elapsed="2.000829"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:48.827330" level="INFO">Typing text '55' into text field '//*[@id="age"]'.</msg>
-<arg>//*[@id="age"]</arg>
-<arg>${idade1}${idade2}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:48.826963" elapsed="0.058584"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:50.886492" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:48.885996" elapsed="2.000816"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:50.887376" level="INFO">Typing text '11000' into text field '//*[@id="salary"]'.</msg>
-<arg>//*[@id="salary"]</arg>
-<arg>11000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:50.887055" elapsed="0.046462"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:52.934189" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:50.933838" elapsed="2.000682"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:52.935032" level="INFO">Typing text 'QA' into text field '//*[@id="department"]'.</msg>
-<arg>//*[@id="department"]</arg>
-<arg>QA</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:52.934757" elapsed="0.041363"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:54.976973" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:52.976561" elapsed="2.000722"/>
+<status status="PASS" start="2025-01-31T15:23:35.224258" elapsed="2.000810"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:54.977843" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
-<arg>//*[@id="submit"]</arg>
+<msg time="2025-01-31T15:23:37.225706" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
+<arg>//*[@id="startStopButton"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:54.977573" elapsed="0.043138"/>
+<status status="PASS" start="2025-01-31T15:23:37.225347" elapsed="0.040715"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:57.021491" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T15:23:41.267179" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:23:37.266682" elapsed="4.000943"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:23:41.267885" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg time="2025-01-31T15:23:41.281899" level="INFO">${progress_value} = 20</msg>
+<var>${progress_value}</var>
+<arg>xpath=//div[@role='progressbar']</arg>
+<arg>aria-valuenow</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:23:41.267938" elapsed="0.014150"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-31T15:23:41.282619" level="INFO">Current Progress: 20</msg>
+<arg>Current Progress: ${progress_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-31T15:23:41.282337" elapsed="0.000428"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${progress_value} &lt; 25</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-01-31T15:23:41.282952" elapsed="0.000243"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:23:43.283631" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:55.021091" elapsed="2.000688"/>
-</kw>
-<status status="PASS" start="2025-01-31T14:21:42.576910" elapsed="14.445012"/>
-</kw>
-<kw name="Edita o registro criado" owner="web_tables_structure">
-<kw name="First Name" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:57.022793" level="INFO">${firstName} = Emilly</msg>
-<var>${firstName}</var>
-<status status="PASS" start="2025-01-31T14:21:57.022606" elapsed="0.000277"/>
-</kw>
-<kw name="Last Name" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:57.023142" level="INFO">${lastName} = Fonseca</msg>
-<var>${lastName}</var>
-<status status="PASS" start="2025-01-31T14:21:57.022999" elapsed="0.000211"/>
-</kw>
-<kw name="Email" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:57.023526" level="INFO">${email} = alexiapastor@example.net</msg>
-<var>${email}</var>
-<status status="PASS" start="2025-01-31T14:21:57.023336" elapsed="0.000259"/>
-</kw>
-<kw name="Random Digit Not Null" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:57.023845" level="INFO">${idade1} = 7</msg>
-<var>${idade1}</var>
-<doc>Generate a random non-zero digit (1 to 9).</doc>
-<status status="PASS" start="2025-01-31T14:21:57.023707" elapsed="0.000204"/>
-</kw>
-<kw name="Random Digit Not Null" owner="FakerLibrary">
-<msg time="2025-01-31T14:21:57.024148" level="INFO">${idade2} = 2</msg>
-<var>${idade2}</var>
-<doc>Generate a random non-zero digit (1 to 9).</doc>
-<status status="PASS" start="2025-01-31T14:21:57.024016" elapsed="0.000196"/>
+<status status="PASS" start="2025-01-31T15:23:41.283342" elapsed="2.000674"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:57.024568" level="INFO">Clicking element '//*[@id="edit-record-4"]'.</msg>
-<arg>//*[@id="edit-record-4"]</arg>
+<msg time="2025-01-31T15:23:43.284722" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
+<arg>//*[@id="startStopButton"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:57.024365" elapsed="0.044758"/>
+<status status="PASS" start="2025-01-31T15:23:43.284389" elapsed="0.042016"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:21:59.069942" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<msg time="2025-01-31T15:23:53.327920" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:57.069547" elapsed="2.000660"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:59.070774" level="INFO">Typing text 'Emilly' into text field '//*[@id="firstName"]'.</msg>
-<arg>//*[@id="firstName"]</arg>
-<arg>${firstName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:59.070473" elapsed="0.049768"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:21:59.120935" level="INFO">Typing text 'Fonseca' into text field '//*[@id="lastName"]'.</msg>
-<arg>//*[@id="lastName"]</arg>
-<arg>${lastName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:21:59.120605" elapsed="0.043655"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:01.165095" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:21:59.164601" elapsed="2.001119"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:01.166275" level="INFO">Typing text 'alexiapastor@example.net' into text field '//*[@id="userEmail"]'.</msg>
-<arg>//*[@id="userEmail"]</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:01.165980" elapsed="0.056338"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:03.223234" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:01.222745" elapsed="2.000947"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:03.224264" level="INFO">Typing text '72' into text field '//*[@id="age"]'.</msg>
-<arg>//*[@id="age"]</arg>
-<arg>${idade1}${idade2}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:03.223931" elapsed="0.037655"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:05.262644" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:03.262121" elapsed="2.001153"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:05.263944" level="INFO">Typing text '25000' into text field '//*[@id="salary"]'.</msg>
-<arg>//*[@id="salary"]</arg>
-<arg>25000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:05.263599" elapsed="0.045334"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:07.309737" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:05.309303" elapsed="2.000903"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:07.310739" level="INFO">Typing text 'Director' into text field '//*[@id="department"]'.</msg>
-<arg>//*[@id="department"]</arg>
-<arg>Director</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:07.310459" elapsed="0.046709"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:09.358281" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:07.357752" elapsed="2.001350"/>
+<status status="PASS" start="2025-01-31T15:23:43.327189" elapsed="10.001038"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:09.359817" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
-<arg>//*[@id="submit"]</arg>
+<msg time="2025-01-31T15:23:53.328803" level="INFO">Clicking element '//*[@id="resetButton"]'.</msg>
+<arg>//*[@id="resetButton"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:09.359490" elapsed="0.036219"/>
+<status status="PASS" start="2025-01-31T15:23:53.328518" elapsed="0.033692"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:12.396849" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2025-01-31T15:23:58.362980" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:09.396302" elapsed="3.000817"/>
+<status status="PASS" start="2025-01-31T15:23:53.362562" elapsed="5.000723"/>
 </kw>
-<status status="PASS" start="2025-01-31T14:21:57.022261" elapsed="15.375002"/>
-</kw>
-<kw name="Exclui o registro criado" owner="web_tables_structure">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T14:22:12.398075" level="INFO">Clicking element '//*[@id="delete-record-4"]'.</msg>
-<arg>//*[@id="delete-record-4"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T14:22:12.397871" elapsed="0.040371"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T14:22:15.439371" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T14:22:12.438811" elapsed="3.000855"/>
-</kw>
-<status status="PASS" start="2025-01-31T14:22:12.397536" elapsed="3.042272"/>
+<status status="PASS" start="2025-01-31T15:23:35.176085" elapsed="23.187392"/>
 </kw>
 <kw name="Fechar navegador" owner="setup_teardown" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-31T14:22:15.440705" elapsed="0.080510"/>
+<status status="PASS" start="2025-01-31T15:23:58.364258" elapsed="0.070447"/>
 </kw>
-<status status="PASS" start="2025-01-31T14:22:15.440309" elapsed="0.081256"/>
+<status status="PASS" start="2025-01-31T15:23:58.363875" elapsed="0.071079"/>
 </kw>
-<status status="PASS" start="2025-01-31T14:21:24.474556" elapsed="51.047366"/>
+<status status="PASS" start="2025-01-31T15:23:19.291459" elapsed="39.143686"/>
 </test>
-<status status="PASS" start="2025-01-31T14:21:24.192983" elapsed="51.329712"/>
+<status status="PASS" start="2025-01-31T15:23:19.006361" elapsed="39.429470"/>
 </suite>
 <statistics>
 <total>
@@ -337,10 +147,10 @@
 <tag>
 </tag>
 <suite>
-<stat name="Web Tables Structure" id="s1" pass="1" fail="0" skip="0">Web Tables Structure</stat>
+<stat name="Widgets Progress Bar" id="s1" pass="1" fail="0" skip="0">Widgets Progress Bar</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-31T14:21:24.471044" level="ERROR">Error in file '/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/main.robot' on line 16: Resource file 'pages_structure/web_tables.robot' does not exist.</msg>
+<msg time="2025-01-31T15:23:41.267885" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
 </errors>
 </robot>
