@@ -1,144 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T15:23:19.003924" rpa="false" schemaversion="5">
-<suite id="s1" name="Widgets Progress Bar" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/widgets_progress_bar.robot">
-<test id="s1-t1" name="Acessando a tela de Widgets e Parando a barra de progresso antes dos 25%" line="8">
+<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T15:52:38.702959" rpa="false" schemaversion="5">
+<suite id="s1" name="Sortable Interaction" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/sortable_interaction.robot">
+<test id="s1-t1" name="Acessando a tela e ordenando em ordem decrescente os números" line="8">
 <kw name="Abrir o site demoqa" owner="setup_teardown" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:19.293701" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-01-31T15:52:39.006229" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>url=${site}</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-31T15:23:19.293358" elapsed="8.715683"/>
+<status status="PASS" start="2025-01-31T15:52:39.005847" elapsed="11.630698"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-31T15:23:28.009576" elapsed="0.012945"/>
+<status status="PASS" start="2025-01-31T15:52:50.636908" elapsed="0.012709"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:31.023382" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-31T15:52:53.651516" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:28.022882" elapsed="3.000864"/>
+<status status="PASS" start="2025-01-31T15:52:50.650566" elapsed="3.001637"/>
 </kw>
-<status status="PASS" start="2025-01-31T15:23:19.292151" elapsed="11.731753"/>
+<status status="PASS" start="2025-01-31T15:52:39.004813" elapsed="14.647637"/>
 </kw>
-<kw name="Acessa a tela de Widgets" owner="widgets_progress_bar_structure">
+<kw name="Acessa a tela de Interações" owner="sortable_interaction_structure">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:31.025062" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[4]/div/div[3]'.</msg>
-<arg>//*[@id="app"]/div/div/div[2]/div/div[4]/div/div[3]</arg>
+<msg time="2025-01-31T15:52:53.653548" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[5]/div/div[3]'.</msg>
+<arg>//*[@id="app"]/div/div/div[2]/div/div[5]/div/div[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:31.024722" elapsed="0.084329"/>
+<status status="PASS" start="2025-01-31T15:52:53.653215" elapsed="0.077928"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:33.109837" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T15:52:55.731974" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:31.109409" elapsed="2.000785"/>
+<status status="PASS" start="2025-01-31T15:52:53.731505" elapsed="2.000925"/>
 </kw>
-<status status="PASS" start="2025-01-31T15:23:31.024328" elapsed="2.086043"/>
+<status status="PASS" start="2025-01-31T15:52:53.652851" elapsed="2.080043"/>
 </kw>
-<kw name="Acessa o menu de Barra de progresso" owner="widgets_progress_bar_structure">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:33.111875" level="INFO">Clicking element '//ul[@class='menu-list']/li//span[text()='Progress Bar']/ancestor::li'.</msg>
-<arg>//ul[@class='menu-list']/li//span[text()='Progress Bar']/ancestor::li</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:33.111573" elapsed="0.062342"/>
+<kw name="Acessa o menu de Sortables" owner="sortable_interaction_structure">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-01-31T15:52:55.734948" level="INFO">${menu1} = //ul[@class='menu-list']/li//span[text()='Sortable']/ancestor::li</msg>
+<var>${menu1}</var>
+<arg>//ul[@class='menu-list']/li//span[text()='Sortable']/ancestor::li</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-01-31T15:52:55.734352" elapsed="0.000789"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:35.174812" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:33.174357" elapsed="2.000776"/>
-</kw>
-<status status="PASS" start="2025-01-31T15:23:33.110753" elapsed="2.064782"/>
-</kw>
-<kw name="Clica na barra de progresso e para antes dos 25% e checa se parou abaixo" owner="widgets_progress_bar_structure">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:35.177224" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
-<arg>//*[@id="startStopButton"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:35.176801" elapsed="0.046679"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:37.224766" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:35.224258" elapsed="2.000810"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${menu1}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-31T15:52:55.735387" elapsed="0.019670"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:37.225706" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
-<arg>//*[@id="startStopButton"]</arg>
+<msg time="2025-01-31T15:52:55.756116" level="INFO">Clicking element '//ul[@class='menu-list']/li//span[text()='Sortable']/ancestor::li'.</msg>
+<arg>${menu1}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:37.225347" elapsed="0.040715"/>
+<status status="PASS" start="2025-01-31T15:52:55.755671" elapsed="0.057359"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:41.267179" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
+<msg time="2025-01-31T15:52:58.813858" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:37.266682" elapsed="4.000943"/>
+<status status="PASS" start="2025-01-31T15:52:55.813447" elapsed="3.000726"/>
 </kw>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:41.267885" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
-<msg time="2025-01-31T15:23:41.281899" level="INFO">${progress_value} = 20</msg>
-<var>${progress_value}</var>
-<arg>xpath=//div[@role='progressbar']</arg>
-<arg>aria-valuenow</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:41.267938" elapsed="0.014150"/>
+<status status="PASS" start="2025-01-31T15:52:55.733626" elapsed="3.080745"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-01-31T15:23:41.282619" level="INFO">Current Progress: 20</msg>
-<arg>Current Progress: ${progress_value}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-01-31T15:23:41.282337" elapsed="0.000428"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${progress_value} &lt; 25</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-01-31T15:23:41.282952" elapsed="0.000243"/>
+<kw name="Ordenando de forma decrescente via Drag and Drop os elementos" owner="sortable_interaction_structure">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>//*[@id="demo-tabpane-list"]/div/div[1]</arg>
+<arg>//*[@id="demo-tabpane-list"]/div/div[6]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-01-31T15:52:58.815608" elapsed="0.535792"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:43.283631" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:41.283342" elapsed="2.000674"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:43.284722" level="INFO">Clicking element '//*[@id="startStopButton"]'.</msg>
-<arg>//*[@id="startStopButton"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:43.284389" elapsed="0.042016"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:53.327920" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:43.327189" elapsed="10.001038"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T15:23:53.328803" level="INFO">Clicking element '//*[@id="resetButton"]'.</msg>
-<arg>//*[@id="resetButton"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T15:23:53.328518" elapsed="0.033692"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T15:23:58.362980" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-01-31T15:53:04.352194" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T15:23:53.362562" elapsed="5.000723"/>
+<status status="PASS" start="2025-01-31T15:52:59.351783" elapsed="5.000949"/>
 </kw>
-<status status="PASS" start="2025-01-31T15:23:35.176085" elapsed="23.187392"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:53:04.353445" level="INFO">Clicking element '//*[@id="sortableContainer"]/h1'.</msg>
+<arg>//*[@id="sortableContainer"]/h1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:53:04.353116" elapsed="0.036581"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:06.390617" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:04.390137" elapsed="2.000956"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>//*[@id="demo-tabpane-list"]/div/div[1]</arg>
+<arg>//*[@id="demo-tabpane-list"]/div/div[5]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-01-31T15:53:06.391439" elapsed="0.537298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:11.929477" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:06.929086" elapsed="5.000682"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:53:11.930409" level="INFO">Clicking element '//*[@id="sortableContainer"]/h1'.</msg>
+<arg>//*[@id="sortableContainer"]/h1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:53:11.930078" elapsed="0.032124"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:13.963239" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:11.962778" elapsed="2.000924"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>//*[@id="demo-tabpane-list"]/div/div[1]</arg>
+<arg>//*[@id="demo-tabpane-list"]/div/div[4]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-01-31T15:53:13.963931" elapsed="0.528096"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:53:14.492666" level="INFO">Clicking element '//*[@id="sortableContainer"]/h1'.</msg>
+<arg>//*[@id="sortableContainer"]/h1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:53:14.492364" elapsed="0.028211"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:16.521386" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:14.520942" elapsed="2.000817"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>//*[@id="demo-tabpane-list"]/div/div[1]</arg>
+<arg>//*[@id="demo-tabpane-list"]/div/div[3]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-01-31T15:53:16.522109" elapsed="0.542650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:53:17.065449" level="INFO">Clicking element '//*[@id="sortableContainer"]/h1'.</msg>
+<arg>//*[@id="sortableContainer"]/h1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:53:17.065122" elapsed="0.028071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:19.094157" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:17.093671" elapsed="2.000904"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>//*[@id="demo-tabpane-list"]/div/div[1]</arg>
+<arg>//*[@id="demo-tabpane-list"]/div/div[2]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-01-31T15:53:19.094894" elapsed="0.527516"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T15:53:19.623206" level="INFO">Clicking element '//*[@id="sortableContainer"]/h1'.</msg>
+<arg>//*[@id="sortableContainer"]/h1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T15:53:19.622901" elapsed="0.031237"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T15:53:25.654875" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T15:53:19.654502" elapsed="6.000686"/>
+</kw>
+<status status="PASS" start="2025-01-31T15:52:58.815033" elapsed="26.840323"/>
 </kw>
 <kw name="Fechar navegador" owner="setup_teardown" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-31T15:23:58.364258" elapsed="0.070447"/>
+<status status="PASS" start="2025-01-31T15:53:25.656314" elapsed="0.069193"/>
 </kw>
-<status status="PASS" start="2025-01-31T15:23:58.363875" elapsed="0.071079"/>
+<status status="PASS" start="2025-01-31T15:53:25.655905" elapsed="0.069838"/>
 </kw>
-<status status="PASS" start="2025-01-31T15:23:19.291459" elapsed="39.143686"/>
+<status status="PASS" start="2025-01-31T15:52:39.003906" elapsed="46.722041"/>
 </test>
-<status status="PASS" start="2025-01-31T15:23:19.006361" elapsed="39.429470"/>
+<status status="PASS" start="2025-01-31T15:52:38.706186" elapsed="47.020287"/>
 </suite>
 <statistics>
 <total>
@@ -147,10 +188,9 @@
 <tag>
 </tag>
 <suite>
-<stat name="Widgets Progress Bar" id="s1" pass="1" fail="0" skip="0">Widgets Progress Bar</stat>
+<stat name="Sortable Interaction" id="s1" pass="1" fail="0" skip="0">Sortable Interaction</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-31T15:23:41.267885" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
 </errors>
 </robot>
