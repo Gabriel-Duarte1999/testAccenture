@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../main.robot
-Resource    ../pages_structure/web_tables_structure.robot
 Test Setup    Abrir o site demoqa
 Test Teardown    Fechar navegador
 
