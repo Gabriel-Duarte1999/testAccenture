@@ -12,3 +12,8 @@ Escolhendo a opção Forms na página inicial
     Preenche o nome e sobrenome aleatoriamente
     Preenche o e-mail aleatoriamente
     Escolhe um gênero aleatoriamente
+    Preenche telefone aleatório
+    Seleciona data do calendário
+    Escolhe um hobbie aleatoriamente
+    Preenche um endereço aleatoriamente
+    Estado
