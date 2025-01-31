@@ -35,9 +35,7 @@ Escolhe um gênero aleatoriamente
     Sleep    2s
 
 Preenche telefone aleatório
-    ${telefoneAleatorio}    FakerLibrary.Phone Number
-
-    Input Text    //*[@id="userNumber"]    ${telefoneAleatorio}
+    Input Text    //*[@id="userNumber"]    11912345678
 
 Seleciona data do calendário
     Click Button    //*[@id="dateOfBirthInput"]
@@ -56,17 +54,32 @@ Escolhe um hobbie aleatoriamente
     Click Element    ${random_option2}
     Sleep    2s
 
+Faz o upload do arquivo
+    Choose File    //*[@id="uploadPicture"]    /home/gabriel.duarte/Documentos/doc.txt
+    Sleep    2s
+
+
 Preenche um endereço aleatoriamente
     ${enderecoAleatorio}    FakerLibrary.Address
     Input Text    //*[@id="currentAddress"]    ${enderecoAleatorio}
     Sleep    2s
 
-Estado
-    Click Element    //*[@id="state"]/div/div[2]/div
+Preenche o Estado
+    Click Element    //*[@id="stateCity-wrapper"]/div[2]
     Sleep    2s
-    Click Element    //*[@id="state"]/div/div[1]/div[1]
+    Press Keys    //*[@id="stateCity-wrapper"]/div[2]    N    C    R    RETURN
     Sleep    2s
 
-    
-    #//*[@id="state"]/div/div[1]/div[2]/div/div
-    #//*[@id="state"]/div/div[1]/div[3]/div/div
+Preenche a Cidade
+    Click Element    //*[@id="stateCity-wrapper"]/div[3]
+    Sleep    2s
+    Press Keys    //*[@id="stateCity-wrapper"]/div[3]    D    E    L    H    I    RETURN
+    Sleep    2s
+
+Submete o formulário
+    Click Button    //*[@id="submit"]
+    Sleep    5s
+
+Valida se um popup foi exibido
+    Wait Until Element Is Visible    //*[@id="example-modal-sizes-title-lg"]
+    Sleep    2s
