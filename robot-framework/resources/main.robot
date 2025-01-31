@@ -11,6 +11,10 @@ Resource    shared/setup_teardown.robot
 #Palavras-Chave para acesso às telas
 Resource    shared/navegation_settings.robot
 
+#Estrutura dos testes
+Resource    pages_structure/fill_form_randomly_structure.robot
+Resource    pages_structure/web_tables_structure.robot
+
 
 *** Variables ***
 

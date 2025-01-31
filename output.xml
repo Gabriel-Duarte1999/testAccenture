@@ -1,551 +1,346 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T12:45:17.050391" rpa="false" schemaversion="5">
-<suite id="s1" name="Fill Form Randomly" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/fill_form_randomly.robot">
-<test id="s1-t1" name="Escolhendo a opção Forms na página inicial" line="9">
+<robot generator="Robot 7.2 (Python 3.10.12 on linux)" generated="2025-01-31T14:21:24.190221" rpa="false" schemaversion="5">
+<suite id="s1" name="Web Tables Structure" source="/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/pages_tests/web_tables_structure.robot">
+<test id="s1-t1" name="Acesssando a tela criando, editando e excluindo o registro" line="9">
 <kw name="Abrir o site demoqa" owner="setup_teardown" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:17.327783" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-01-31T14:21:24.476552" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>url=${site}</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-31T12:45:17.327456" elapsed="9.385658"/>
+<status status="PASS" start="2025-01-31T14:21:24.476179" elapsed="9.896391"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-31T12:45:26.713477" elapsed="0.012632"/>
+<status status="PASS" start="2025-01-31T14:21:34.372930" elapsed="0.013218"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:29.726938" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-01-31T14:21:37.388026" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:26.726505" elapsed="3.001925"/>
+<status status="PASS" start="2025-01-31T14:21:34.386674" elapsed="3.001634"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:45:17.326317" elapsed="12.402273"/>
+<status status="PASS" start="2025-01-31T14:21:24.475187" elapsed="12.913292"/>
 </kw>
-<kw name="Acessa a tela de formulários" owner="fill_form_randomly_structure">
+<kw name="Acessar a tela de Elements" owner="web_tables_structure">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:29.729584" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[2]'.</msg>
-<arg>//*[@id="app"]/div/div/div[2]/div/div[2]</arg>
+<msg time="2025-01-31T14:21:37.389930" level="INFO">Clicking element '//*[@id="app"]/div/div/div[2]/div/div[1]/div/div[3]'.</msg>
+<arg>//*[@id="app"]/div/div/div[2]/div/div[1]/div/div[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:29.729258" elapsed="0.084435"/>
+<status status="PASS" start="2025-01-31T14:21:37.389260" elapsed="0.108816"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:31.814801" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T14:21:39.499253" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:29.814247" elapsed="2.000880"/>
+<status status="PASS" start="2025-01-31T14:21:37.498572" elapsed="2.001559"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:45:29.728926" elapsed="2.086433"/>
+<status status="PASS" start="2025-01-31T14:21:37.388896" elapsed="2.111855"/>
 </kw>
-<kw name="Clica em Practice Form" owner="fill_form_randomly_structure">
+<kw name="Clica em Web Tables" owner="web_tables_structure">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:31.816444" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[1]/div/div/div[2]/div/ul'.</msg>
-<arg>//*[@id="app"]/div/div/div/div[1]/div/div/div[2]/div/ul</arg>
+<msg time="2025-01-31T14:21:39.502973" level="INFO">Clicking element '//*[@id="item-3"]'.</msg>
+<arg>//*[@id="item-3"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:31.816166" elapsed="0.069430"/>
+<status status="PASS" start="2025-01-31T14:21:39.502415" elapsed="0.072644"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:33.887024" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<msg time="2025-01-31T14:21:42.575888" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:31.886233" elapsed="2.001209"/>
+<status status="PASS" start="2025-01-31T14:21:39.575507" elapsed="3.000668"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:45:31.815774" elapsed="2.071846"/>
+<status status="PASS" start="2025-01-31T14:21:39.501694" elapsed="3.074639"/>
 </kw>
-<kw name="Preenche o nome e sobrenome aleatoriamente" owner="fill_form_randomly_structure">
-<kw name="Random Letters" owner="FakerLibrary">
-<msg time="2025-01-31T12:45:33.888921" level="INFO">${nomeAleatorio} = ['V', 'C', 'A', 'F', 'E', 'u', 'F', 'h', 'I', 'x', 'b', 's', 'Y', 'b', 'O', 'T']</msg>
-<var>${nomeAleatorio}</var>
-<doc>Generate a list of random ASCII letters (a-z and A-Z) of the specified ``length``.</doc>
-<status status="PASS" start="2025-01-31T12:45:33.888627" elapsed="0.000397"/>
+<kw name="Cria um novo Registro" owner="web_tables_structure">
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:42.577564" level="INFO">${firstName} = Yan</msg>
+<var>${firstName}</var>
+<status status="PASS" start="2025-01-31T14:21:42.577334" elapsed="0.000340"/>
 </kw>
-<kw name="Random Letters" owner="FakerLibrary">
-<msg time="2025-01-31T12:45:33.889391" level="INFO">${sobrenomeAleatorio} = ['c', 'Z', 'S', 'U', 'J', 'f', 'B', 'k', 'H', 'h', 'K', 'M', 'k', 'v', 'u', 'M']</msg>
-<var>${sobrenomeAleatorio}</var>
-<doc>Generate a list of random ASCII letters (a-z and A-Z) of the specified ``length``.</doc>
-<status status="PASS" start="2025-01-31T12:45:33.889163" elapsed="0.000344"/>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:42.577974" level="INFO">${lastName} = da Mota</msg>
+<var>${lastName}</var>
+<status status="PASS" start="2025-01-31T14:21:42.577805" elapsed="0.000260"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:33.890073" level="INFO">Typing text '['V', 'C', 'A', 'F', 'E', 'u', 'F', 'h', 'I', 'x', 'b', 's', 'Y', 'b', 'O', 'T']' into text field '//*[@id="firstName"]'.</msg>
-<arg>//*[@id="firstName"]</arg>
-<arg>${nomeAleatorio}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:33.889707" elapsed="0.093626"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:33.984647" level="INFO">Typing text '['c', 'Z', 'S', 'U', 'J', 'f', 'B', 'k', 'H', 'h', 'K', 'M', 'k', 'v', 'u', 'M']' into text field '//*[@id="lastName"]'.</msg>
-<arg>//*[@id="lastName"]</arg>
-<arg>${sobrenomeAleatorio}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:33.983875" elapsed="0.079503"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:36.064130" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:34.063724" elapsed="2.000830"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:33.888059" elapsed="2.176740"/>
-</kw>
-<kw name="Preenche o e-mail aleatoriamente" owner="fill_form_randomly_structure">
 <kw name="Email" owner="FakerLibrary">
-<msg time="2025-01-31T12:45:36.066103" level="INFO">${emailAleatorio} = vcavalcante@example.net</msg>
-<var>${emailAleatorio}</var>
-<status status="PASS" start="2025-01-31T12:45:36.065767" elapsed="0.000487"/>
+<msg time="2025-01-31T14:21:42.578422" level="INFO">${email} = gsiqueira@example.org</msg>
+<var>${email}</var>
+<status status="PASS" start="2025-01-31T14:21:42.578195" elapsed="0.000308"/>
+</kw>
+<kw name="Random Digit Not Null" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:42.578788" level="INFO">${idade1} = 5</msg>
+<var>${idade1}</var>
+<doc>Generate a random non-zero digit (1 to 9).</doc>
+<status status="PASS" start="2025-01-31T14:21:42.578626" elapsed="0.000238"/>
+</kw>
+<kw name="Random Digit Not Null" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:42.579134" level="INFO">${idade2} = 5</msg>
+<var>${idade2}</var>
+<doc>Generate a random non-zero digit (1 to 9).</doc>
+<status status="PASS" start="2025-01-31T14:21:42.578984" elapsed="0.000220"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:42.579650" level="INFO">Clicking button '//*[@id="addNewRecordButton"]'.</msg>
+<arg>//*[@id="addNewRecordButton"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:42.579348" elapsed="0.066729"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:21:44.647487" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:21:42.646822" elapsed="2.001078"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:36.066832" level="INFO">Typing text 'vcavalcante@example.net' into text field '//*[@id="userEmail"]'.</msg>
+<msg time="2025-01-31T14:21:44.648688" level="INFO">Typing text 'Yan' into text field '//*[@id="firstName"]'.</msg>
+<arg>//*[@id="firstName"]</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:44.648187" elapsed="0.062837"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:44.711777" level="INFO">Typing text 'da Mota' into text field '//*[@id="lastName"]'.</msg>
+<arg>//*[@id="lastName"]</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:44.711399" elapsed="0.052155"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:21:46.764273" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:21:44.763873" elapsed="2.000815"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:46.765384" level="INFO">Typing text 'gsiqueira@example.org' into text field '//*[@id="userEmail"]'.</msg>
 <arg>//*[@id="userEmail"]</arg>
-<arg>${emailAleatorio}</arg>
+<arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:36.066488" elapsed="0.062526"/>
+<status status="PASS" start="2025-01-31T14:21:46.765024" elapsed="0.060346"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:38.130118" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T14:21:48.826344" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:36.129560" elapsed="2.000905"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:36.065391" elapsed="2.065240"/>
-</kw>
-<kw name="Escolhe um gênero aleatoriamente" owner="fill_form_randomly_structure">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-01-31T12:45:38.131890" level="INFO">${options} = ['//*[@id="genterWrapper"]/div[2]/div[1]', '//*[@id="genterWrapper"]/div[2]/div[2]', '//*[@id="genterWrapper"]/div[2]/div[3]']</msg>
-<var>${options}</var>
-<arg>//*[@id="genterWrapper"]/div[2]/div[1]</arg>
-<arg>//*[@id="genterWrapper"]/div[2]/div[2]</arg>
-<arg>//*[@id="genterWrapper"]/div[2]/div[3]</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.131606" elapsed="0.000448"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-01-31T12:45:38.132432" level="INFO">Length is 3.</msg>
-<msg time="2025-01-31T12:45:38.132555" level="INFO">${list_length} = 3</msg>
-<var>${list_length}</var>
-<arg>${options}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.132232" elapsed="0.000387"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-01-31T12:45:38.133054" level="INFO">${random_index} = 1</msg>
-<var>${random_index}</var>
-<arg>random.randint(0, ${list_length}-1)</arg>
-<arg>modules=random</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.132746" elapsed="0.000392"/>
-</kw>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-01-31T12:45:38.133495" level="INFO">${random_option} = //*[@id="genterWrapper"]/div[2]/div[2]</msg>
-<var>${random_option}</var>
-<arg>${options}</arg>
-<arg>${random_index}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.133272" elapsed="0.000297"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:38.133913" level="INFO">Clicking element '//*[@id="genterWrapper"]/div[2]/div[2]'.</msg>
-<arg>${random_option}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.133703" elapsed="0.056127"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:40.190599" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:38.190169" elapsed="2.000765"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:38.131022" elapsed="2.060072"/>
-</kw>
-<kw name="Preenche telefone aleatório" owner="fill_form_randomly_structure">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:40.192437" level="INFO">Typing text '11912345678' into text field '//*[@id="userNumber"]'.</msg>
-<arg>//*[@id="userNumber"]</arg>
-<arg>11912345678</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:40.192123" elapsed="0.049210"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:40.191544" elapsed="0.050139"/>
-</kw>
-<kw name="Seleciona data do calendário" owner="fill_form_randomly_structure">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:40.242854" level="INFO">Clicking button '//*[@id="dateOfBirthInput"]'.</msg>
-<arg>//*[@id="dateOfBirthInput"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:40.242586" elapsed="0.105420"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:44.348837" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:40.348403" elapsed="4.000861"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:44.349840" level="INFO">Clicking element '//*[@id="dateOfBirth"]/div[2]/div[2]/div/div/div[2]/div[2]/div[3]/div[3]'.</msg>
-<arg>//*[@id="dateOfBirth"]/div[2]/div[2]/div/div/div[2]/div[2]/div[3]/div[3]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:44.349547" elapsed="0.045643"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:46.395900" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:44.395520" elapsed="2.000644"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:46.396659" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]'.</msg>
-<arg>//*[@id="app"]/div/div/div/div[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:46.396395" elapsed="0.033211"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:48.430276" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:46.429919" elapsed="2.000758"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:40.242122" elapsed="8.188778"/>
-</kw>
-<kw name="Escolhe um hobbie aleatoriamente" owner="fill_form_randomly_structure">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-01-31T12:45:48.432003" level="INFO">${options2} = ['//*[@id="hobbiesWrapper"]/div[2]/div[1]', '//*[@id="hobbiesWrapper"]/div[2]/div[2]', '//*[@id="hobbiesWrapper"]/div[2]/div[3]']</msg>
-<var>${options2}</var>
-<arg>//*[@id="hobbiesWrapper"]/div[2]/div[1]</arg>
-<arg>//*[@id="hobbiesWrapper"]/div[2]/div[2]</arg>
-<arg>//*[@id="hobbiesWrapper"]/div[2]/div[3]</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.431740" elapsed="0.000369"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-01-31T12:45:48.432426" level="INFO">Length is 3.</msg>
-<msg time="2025-01-31T12:45:48.432528" level="INFO">${list_length2} = 3</msg>
-<var>${list_length2}</var>
-<arg>${options2}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.432261" elapsed="0.000327"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-01-31T12:45:48.433015" level="INFO">${random_index2} = 2</msg>
-<var>${random_index2}</var>
-<arg>random.randint(0, ${list_length2}-1)</arg>
-<arg>modules=random</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.432719" elapsed="0.000378"/>
-</kw>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-01-31T12:45:48.433452" level="INFO">${random_option2} = //*[@id="hobbiesWrapper"]/div[2]/div[3]</msg>
-<var>${random_option2}</var>
-<arg>${options2}</arg>
-<arg>${random_index2}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.433232" elapsed="0.000299"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:48.433971" level="INFO">Clicking element '//*[@id="hobbiesWrapper"]/div[2]/div[3]'.</msg>
-<arg>${random_option2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.433671" elapsed="0.052467"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:50.487091" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:48.486638" elapsed="2.000799"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:48.431367" elapsed="2.056239"/>
-</kw>
-<kw name="Faz o upload do arquivo" owner="fill_form_randomly_structure">
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:50.489015" level="INFO">Sending /home/gabriel.duarte/Documentos/doc.txt to browser.</msg>
-<arg>//*[@id="uploadPicture"]</arg>
-<arg>/home/gabriel.duarte/Documentos/doc.txt</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:50.488722" elapsed="0.024077"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:52.513653" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:50.513193" elapsed="2.000725"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:50.488272" elapsed="2.025781"/>
-</kw>
-<kw name="Preenche um endereço aleatoriamente" owner="fill_form_randomly_structure">
-<kw name="Address" owner="FakerLibrary">
-<msg time="2025-01-31T12:45:52.515051" level="INFO">${enderecoAleatorio} = Vereda de Abreu
-Caiçara - Adelaide
-86855839 Vieira do Oeste / RS</msg>
-<var>${enderecoAleatorio}</var>
-<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
-<status status="PASS" start="2025-01-31T12:45:52.514777" elapsed="0.000375"/>
+<status status="PASS" start="2025-01-31T14:21:46.825895" elapsed="2.000829"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:52.515550" level="INFO">Typing text 'Vereda de Abreu
-Caiçara - Adelaide
-86855839 Vieira do Oeste / RS' into text field '//*[@id="currentAddress"]'.</msg>
-<arg>//*[@id="currentAddress"]</arg>
-<arg>${enderecoAleatorio}</arg>
+<msg time="2025-01-31T14:21:48.827330" level="INFO">Typing text '55' into text field '//*[@id="age"]'.</msg>
+<arg>//*[@id="age"]</arg>
+<arg>${idade1}${idade2}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:52.515321" elapsed="0.057896"/>
+<status status="PASS" start="2025-01-31T14:21:48.826963" elapsed="0.058584"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:54.574323" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T14:21:50.886492" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:52.573634" elapsed="2.001137"/>
+<status status="PASS" start="2025-01-31T14:21:48.885996" elapsed="2.000816"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:45:52.514408" elapsed="2.060503"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:50.887376" level="INFO">Typing text '11000' into text field '//*[@id="salary"]'.</msg>
+<arg>//*[@id="salary"]</arg>
+<arg>11000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:50.887055" elapsed="0.046462"/>
 </kw>
-<kw name="Preenche o Estado" owner="fill_form_randomly_structure">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:21:52.934189" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:21:50.933838" elapsed="2.000682"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:52.935032" level="INFO">Typing text 'QA' into text field '//*[@id="department"]'.</msg>
+<arg>//*[@id="department"]</arg>
+<arg>QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:52.934757" elapsed="0.041363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:21:54.976973" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:21:52.976561" elapsed="2.000722"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:54.575995" level="INFO">Clicking element '//*[@id="stateCity-wrapper"]/div[2]'.</msg>
-<arg>//*[@id="stateCity-wrapper"]/div[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:54.575765" elapsed="0.043046"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:56.619657" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:54.619258" elapsed="2.000716"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:56.620730" level="INFO">Sending key(s) ('N', 'C', 'R', 'RETURN') to //*[@id="stateCity-wrapper"]/div[2] element.</msg>
-<msg time="2025-01-31T12:45:56.893477" level="INFO">Sending key N</msg>
-<msg time="2025-01-31T12:45:56.902378" level="INFO">Sending key C</msg>
-<msg time="2025-01-31T12:45:56.909071" level="INFO">Sending key R</msg>
-<msg time="2025-01-31T12:45:56.914697" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-01-31T12:45:56.915053" level="INFO">Releasing special key RETURN.</msg>
-<arg>//*[@id="stateCity-wrapper"]/div[2]</arg>
-<arg>N</arg>
-<arg>C</arg>
-<arg>R</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-01-31T12:45:56.620210" elapsed="0.304299"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:45:58.925242" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:56.924835" elapsed="2.000704"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:54.575231" elapsed="4.350457"/>
-</kw>
-<kw name="Preenche a Cidade" owner="fill_form_randomly_structure">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:45:58.926552" level="INFO">Clicking element '//*[@id="stateCity-wrapper"]/div[3]'.</msg>
-<arg>//*[@id="stateCity-wrapper"]/div[3]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:45:58.926319" elapsed="0.038044"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:46:00.965052" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:45:58.964686" elapsed="2.000673"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:46:00.966546" level="INFO">Sending key(s) ('D', 'E', 'L', 'H', 'I', 'RETURN') to //*[@id="stateCity-wrapper"]/div[3] element.</msg>
-<msg time="2025-01-31T12:46:01.236554" level="INFO">Sending key D</msg>
-<msg time="2025-01-31T12:46:01.244682" level="INFO">Sending key E</msg>
-<msg time="2025-01-31T12:46:01.251669" level="INFO">Sending key L</msg>
-<msg time="2025-01-31T12:46:01.259114" level="INFO">Sending key H</msg>
-<msg time="2025-01-31T12:46:01.265028" level="INFO">Sending key I</msg>
-<msg time="2025-01-31T12:46:01.271364" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-01-31T12:46:01.271582" level="INFO">Releasing special key RETURN.</msg>
-<arg>//*[@id="stateCity-wrapper"]/div[3]</arg>
-<arg>D</arg>
-<arg>E</arg>
-<arg>L</arg>
-<arg>H</arg>
-<arg>I</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-01-31T12:46:00.965665" elapsed="0.312407"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:46:03.278781" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:46:01.278399" elapsed="2.000653"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:45:58.925960" elapsed="4.353246"/>
-</kw>
-<kw name="Submete o formulário" owner="fill_form_randomly_structure">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:46:03.280390" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
+<msg time="2025-01-31T14:21:54.977843" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
 <arg>//*[@id="submit"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T12:46:03.280157" elapsed="0.056109"/>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:54.977573" elapsed="0.043138"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:46:08.336998" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:46:03.336593" elapsed="5.000682"/>
-</kw>
-<status status="PASS" start="2025-01-31T12:46:03.279812" elapsed="5.057607"/>
-</kw>
-<kw name="Valida se um popup foi exibido" owner="fill_form_randomly_structure">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="example-modal-sizes-title-lg"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-31T12:46:08.337957" elapsed="0.014625"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-31T12:46:10.353238" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-01-31T14:21:57.021491" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-31T12:46:08.352876" elapsed="2.000742"/>
+<status status="PASS" start="2025-01-31T14:21:55.021091" elapsed="2.000688"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:46:08.337664" elapsed="2.016145"/>
+<status status="PASS" start="2025-01-31T14:21:42.576910" elapsed="14.445012"/>
 </kw>
-<kw name="Fecha o popup" owner="fill_form_randomly_structure">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>/html/body/div[4]</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-01-31T12:46:10.354461" elapsed="0.008696"/>
+<kw name="Edita o registro criado" owner="web_tables_structure">
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:57.022793" level="INFO">${firstName} = Emilly</msg>
+<var>${firstName}</var>
+<status status="PASS" start="2025-01-31T14:21:57.022606" elapsed="0.000277"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:57.023142" level="INFO">${lastName} = Fonseca</msg>
+<var>${lastName}</var>
+<status status="PASS" start="2025-01-31T14:21:57.022999" elapsed="0.000211"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:57.023526" level="INFO">${email} = alexiapastor@example.net</msg>
+<var>${email}</var>
+<status status="PASS" start="2025-01-31T14:21:57.023336" elapsed="0.000259"/>
+</kw>
+<kw name="Random Digit Not Null" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:57.023845" level="INFO">${idade1} = 7</msg>
+<var>${idade1}</var>
+<doc>Generate a random non-zero digit (1 to 9).</doc>
+<status status="PASS" start="2025-01-31T14:21:57.023707" elapsed="0.000204"/>
+</kw>
+<kw name="Random Digit Not Null" owner="FakerLibrary">
+<msg time="2025-01-31T14:21:57.024148" level="INFO">${idade2} = 2</msg>
+<var>${idade2}</var>
+<doc>Generate a random non-zero digit (1 to 9).</doc>
+<status status="PASS" start="2025-01-31T14:21:57.024016" elapsed="0.000196"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-31T12:46:10.363881" level="INFO">Clicking element '//*[@id="closeLargeModal"]'.</msg>
-<msg time="2025-01-31T12:46:11.532901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-31T12:46:11.533244" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="closeLargeModal" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1310, 795). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.110)
-Stacktrace:
-#0 0x642b6f44753a &lt;unknown&gt;
-#1 0x642b6ef42f00 &lt;unknown&gt;
-#2 0x642b6ef998de &lt;unknown&gt;
-#3 0x642b6ef97813 &lt;unknown&gt;
-#4 0x642b6ef94f22 &lt;unknown&gt;
-#5 0x642b6ef94135 &lt;unknown&gt;
-#6 0x642b6ef86dcd &lt;unknown&gt;
-#7 0x642b6efb75a2 &lt;unknown&gt;
-#8 0x642b6ef86758 &lt;unknown&gt;
-#9 0x642b6efb776e &lt;unknown&gt;
-#10 0x642b6efd5f84 &lt;unknown&gt;
-#11 0x642b6efb7343 &lt;unknown&gt;
-#12 0x642b6ef8478a &lt;unknown&gt;
-#13 0x642b6ef859de &lt;unknown&gt;
-#14 0x642b6f4112cb &lt;unknown&gt;
-#15 0x642b6f415242 &lt;unknown&gt;
-#16 0x642b6f3fe7ac &lt;unknown&gt;
-#17 0x642b6f415df7 &lt;unknown&gt;
-#18 0x642b6f3e2b2f &lt;unknown&gt;
-#19 0x642b6f4361a8 &lt;unknown&gt;
-#20 0x642b6f436370 &lt;unknown&gt;
-#21 0x642b6f4463b6 &lt;unknown&gt;
-#22 0x7cd1a9894ac3 &lt;unknown&gt;
-</msg>
-<arg>//*[@id="closeLargeModal"]</arg>
+<msg time="2025-01-31T14:21:57.024568" level="INFO">Clicking element '//*[@id="edit-record-4"]'.</msg>
+<arg>//*[@id="edit-record-4"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-01-31T12:46:10.363524" elapsed="1.172521">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="closeLargeModal" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1310, 795). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.110)
-Stacktrace:
-#0 0x642b6f44753a &lt;unknown&gt;
-#1 0x642b6ef42f00 &lt;unknown&gt;
-#2 0x642b6ef998de &lt;unknown&gt;
-#3 0x642b6ef97813 &lt;unknown&gt;
-#4 0x642b6ef94f22 &lt;unknown&gt;
-#5 0x642b6ef94135 &lt;unknown&gt;
-#6 0x642b6ef86dcd &lt;unknown&gt;
-#7 0x642b6efb75a2 &lt;unknown&gt;
-#8 0x642b6ef86758 &lt;unknown&gt;
-#9 0x642b6efb776e &lt;unknown&gt;
-#10 0x642b6efd5f84 &lt;unknown&gt;
-#11 0x642b6efb7343 &lt;unknown&gt;
-#12 0x642b6ef8478a &lt;unknown&gt;
-#13 0x642b6ef859de &lt;unknown&gt;
-#14 0x642b6f4112cb &lt;unknown&gt;
-#15 0x642b6f415242 &lt;unknown&gt;
-#16 0x642b6f3fe7ac &lt;unknown&gt;
-#17 0x642b6f415df7 &lt;unknown&gt;
-#18 0x642b6f3e2b2f &lt;unknown&gt;
-#19 0x642b6f4361a8 &lt;unknown&gt;
-#20 0x642b6f436370 &lt;unknown&gt;
-#21 0x642b6f4463b6 &lt;unknown&gt;
-#22 0x7cd1a9894ac3 &lt;unknown&gt;
-</status>
+<status status="PASS" start="2025-01-31T14:21:57.024365" elapsed="0.044758"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>5s</arg>
+<msg time="2025-01-31T14:21:59.069942" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-01-31T12:46:11.536535" elapsed="0.000155"/>
+<status status="PASS" start="2025-01-31T14:21:57.069547" elapsed="2.000660"/>
 </kw>
-<status status="FAIL" start="2025-01-31T12:46:10.354102" elapsed="1.182822">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="closeLargeModal" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1310, 795). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.110)
-Stacktrace:
-#0 0x642b6f44753a &lt;unknown&gt;
-#1 0x642b6ef42f00 &lt;unknown&gt;
-#2 0x642b6ef998de &lt;unknown&gt;
-#3 0x642b6ef97813 &lt;unknown&gt;
-#4 0x642b6ef94f22 &lt;unknown&gt;
-#5 0x642b6ef94135 &lt;unknown&gt;
-#6 0x642b6ef86dcd &lt;unknown&gt;
-#7 0x642b6efb75a2 &lt;unknown&gt;
-#8 0x642b6ef86758 &lt;unknown&gt;
-#9 0x642b6efb776e &lt;unknown&gt;
-#10 0x642b6efd5f84 &lt;unknown&gt;
-#11 0x642b6efb7343 &lt;unknown&gt;
-#12 0x642b6ef8478a &lt;unknown&gt;
-#13 0x642b6ef859de &lt;unknown&gt;
-#14 0x642b6f4112cb &lt;unknown&gt;
-#15 0x642b6f415242 &lt;unknown&gt;
-#16 0x642b6f3fe7ac &lt;unknown&gt;
-#17 0x642b6f415df7 &lt;unknown&gt;
-#18 0x642b6f3e2b2f &lt;unknown&gt;
-#19 0x642b6f4361a8 &lt;unknown&gt;
-#20 0x642b6f436370 &lt;unknown&gt;
-#21 0x642b6f4463b6 &lt;unknown&gt;
-#22 0x7cd1a9894ac3 &lt;unknown&gt;
-</status>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:59.070774" level="INFO">Typing text 'Emilly' into text field '//*[@id="firstName"]'.</msg>
+<arg>//*[@id="firstName"]</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:59.070473" elapsed="0.049768"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:21:59.120935" level="INFO">Typing text 'Fonseca' into text field '//*[@id="lastName"]'.</msg>
+<arg>//*[@id="lastName"]</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:21:59.120605" elapsed="0.043655"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:01.165095" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:21:59.164601" elapsed="2.001119"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:01.166275" level="INFO">Typing text 'alexiapastor@example.net' into text field '//*[@id="userEmail"]'.</msg>
+<arg>//*[@id="userEmail"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:01.165980" elapsed="0.056338"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:03.223234" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:01.222745" elapsed="2.000947"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:03.224264" level="INFO">Typing text '72' into text field '//*[@id="age"]'.</msg>
+<arg>//*[@id="age"]</arg>
+<arg>${idade1}${idade2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:03.223931" elapsed="0.037655"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:05.262644" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:03.262121" elapsed="2.001153"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:05.263944" level="INFO">Typing text '25000' into text field '//*[@id="salary"]'.</msg>
+<arg>//*[@id="salary"]</arg>
+<arg>25000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:05.263599" elapsed="0.045334"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:07.309737" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:05.309303" elapsed="2.000903"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:07.310739" level="INFO">Typing text 'Director' into text field '//*[@id="department"]'.</msg>
+<arg>//*[@id="department"]</arg>
+<arg>Director</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:07.310459" elapsed="0.046709"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:09.358281" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:07.357752" elapsed="2.001350"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:09.359817" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<arg>//*[@id="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:09.359490" elapsed="0.036219"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:12.396849" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:09.396302" elapsed="3.000817"/>
+</kw>
+<status status="PASS" start="2025-01-31T14:21:57.022261" elapsed="15.375002"/>
+</kw>
+<kw name="Exclui o registro criado" owner="web_tables_structure">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T14:22:12.398075" level="INFO">Clicking element '//*[@id="delete-record-4"]'.</msg>
+<arg>//*[@id="delete-record-4"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T14:22:12.397871" elapsed="0.040371"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-31T14:22:15.439371" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-31T14:22:12.438811" elapsed="3.000855"/>
+</kw>
+<status status="PASS" start="2025-01-31T14:22:12.397536" elapsed="3.042272"/>
 </kw>
 <kw name="Fechar navegador" owner="setup_teardown" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-31T12:46:11.538086" elapsed="0.068916"/>
+<status status="PASS" start="2025-01-31T14:22:15.440705" elapsed="0.080510"/>
 </kw>
-<status status="PASS" start="2025-01-31T12:46:11.537538" elapsed="0.069737"/>
+<status status="PASS" start="2025-01-31T14:22:15.440309" elapsed="0.081256"/>
 </kw>
-<status status="FAIL" start="2025-01-31T12:45:17.325386" elapsed="54.282122">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="closeLargeModal" type="button" class="btn btn-primary"&gt;...&lt;/button&gt; is not clickable at point (1310, 795). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.110)
-Stacktrace:
-#0 0x642b6f44753a &lt;unknown&gt;
-#1 0x642b6ef42f00 &lt;unknown&gt;
-#2 0x642b6ef998de &lt;unknown&gt;
-#3 0x642b6ef97813 &lt;unknown&gt;
-#4 0x642b6ef94f22 &lt;unknown&gt;
-#5 0x642b6ef94135 &lt;unknown&gt;
-#6 0x642b6ef86dcd &lt;unknown&gt;
-#7 0x642b6efb75a2 &lt;unknown&gt;
-#8 0x642b6ef86758 &lt;unknown&gt;
-#9 0x642b6efb776e &lt;unknown&gt;
-#10 0x642b6efd5f84 &lt;unknown&gt;
-#11 0x642b6efb7343 &lt;unknown&gt;
-#12 0x642b6ef8478a &lt;unknown&gt;
-#13 0x642b6ef859de &lt;unknown&gt;
-#14 0x642b6f4112cb &lt;unknown&gt;
-#15 0x642b6f415242 &lt;unknown&gt;
-#16 0x642b6f3fe7ac &lt;unknown&gt;
-#17 0x642b6f415df7 &lt;unknown&gt;
-#18 0x642b6f3e2b2f &lt;unknown&gt;
-#19 0x642b6f4361a8 &lt;unknown&gt;
-#20 0x642b6f436370 &lt;unknown&gt;
-#21 0x642b6f4463b6 &lt;unknown&gt;
-#22 0x7cd1a9894ac3 &lt;unknown&gt;
-</status>
+<status status="PASS" start="2025-01-31T14:21:24.474556" elapsed="51.047366"/>
 </test>
-<status status="FAIL" start="2025-01-31T12:45:17.053633" elapsed="54.554438"/>
+<status status="PASS" start="2025-01-31T14:21:24.192983" elapsed="51.329712"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Fill Form Randomly" id="s1" pass="0" fail="1" skip="0">Fill Form Randomly</stat>
+<stat name="Web Tables Structure" id="s1" pass="1" fail="0" skip="0">Web Tables Structure</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-01-31T14:21:24.471044" level="ERROR">Error in file '/home/gabriel.duarte/Documentos/testAccenture-1/robot-framework/resources/main.robot' on line 16: Resource file 'pages_structure/web_tables.robot' does not exist.</msg>
 </errors>
 </robot>
