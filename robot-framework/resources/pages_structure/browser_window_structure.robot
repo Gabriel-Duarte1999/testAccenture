@@ -14,22 +14,21 @@ Acessa o menu Browser Windows
     Click Element  ${locator1}
     Sleep    3s
 
-Handle New Window And Validate
-    [Arguments]   ${expected_text}
+Valida a nova janela
+    [Arguments]   ${texto_janela}
 
     Click Element   //*[@id="windowButton"]
     ${original_handles}=   Get Window Handles
-    ${new_window}=  Wait Until Keyword Succeeds   10s   1s     Get New Window Handle     ${original_handles}
+    ${new_window}=  Wait Until Keyword Succeeds   10s   1s     Trata a nova janela     ${original_handles}
     Switch Window   ${new_window}
 
-    Wait Until Element Is Visible   xpath=//*[@id="sampleHeading"]  timeout=10s
-    Wait Until Element Contains   xpath=//*[@id="sampleHeading"]    ${expected_text}   timeout=10s
-    Element Should Contain     xpath=//*[@id="sampleHeading"]  ${expected_text}
+    Wait Until Element Is Visible   //*[@id="sampleHeading"]  timeout=10s
+    Wait Until Element Contains   //*[@id="sampleHeading"]    ${texto_janela}   timeout=10s
+    Element Should Contain     //*[@id="sampleHeading"]  ${texto_janela}
 
     Switch Window    ${original_handles[0]}
 
-
-Get New Window Handle
+Trata a nova janela
     [Arguments]   ${original_handles}
     ${new_handles}=    Get Window Handles
     ${new_window}=    Remove Duplicates     ${new_handles}
